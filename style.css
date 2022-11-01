@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
 }
 body {
     font-family: "DM Sans", sans-serif;
@@ -125,6 +128,73 @@ body {
 
 /* button more clases css */
 
+
+.buttonfx{
+    color: black; /* button text color */
+    outline: none;
+    background: transparent;
+    border: none;
+    letter-spacing: 0.0625em;
+    padding: 8px 10px; 
+    border: 1px solid red;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font: bold 16px 'Bitter', sans-serif; /* use google font */
+    line-height: 2;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+    overflow: hidden;
+    transition: all .5s;
+  }
+  
+  /* //// Default effect: Slide from Top  //// */
+  
+  .buttonfx:before,
+  .buttonfx:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+  background: red;/* onhover background color */
+    z-index: -1;
+    transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+    transition: all .5s;
+  }
+  .buttonfx:before{
+    background: blue; /* button default background color */
+    z-index: -2;
+    transform: translate3D(0,0,0);
+  }
+  .buttonfx:hover{
+    color: #fff;
+  } 
+  .buttonfx:hover:after{
+    transform: translate3D(0,0,0);
+    transition: all .5s;
+  }
+  /* //// Slide Left  //// */
+  .slideleft:after{
+    top: 0;
+    z-index: -1;
+    transform: translate3D(-101%,0,0);
+  }
+  .slideleft:hover:after{
+    transform: translate3D(0,0,0);
+    transition: all .5s;
+  }
+  /* #### Bounce classes #### */
+  
+  .bouncein:hover:before,
+  .bouncein:hover:after{
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66) !important;
+  }
 /* button more clases css */
 
 
@@ -332,29 +402,113 @@ p {
     
 }
 
-/* button more clases css */
-.btn{
-    border: 1px solid #3498db;
-    border-radius: 25px;
-    padding: 10px 30px;
-    font-size: 20px;
-    font-family: "montserrat";
-    cursor: pointer;
-    margin: 10px;
-    transition: 0.5s;
-  
-  }
-  .btn2{
-    font-family: "Fredoka One", cursive;
-    color: #ed078b;
-  } 
-  .btn2:hover{
-    color: black;
-    background: #ed078b;
-  }
-  
-/* button more clases css */
+
 
 /* time section */
 
 
+/* team section start */
+
+
+
+img{
+    user-select: none;
+}
+
+.image{
+    
+    border: 2px solid red;
+    opacity: 1;
+    filter: alpha(opacity=100);
+   
+  }
+  .image:hover
+  {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+  }
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.1rem;
+    text-transform: capitalize;
+    color: red;
+}
+.team-pra{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size:20px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.team .slide{
+    text-align: center;
+}
+
+.team .slide:hover .image .share{
+    bottom: 0;
+}
+
+.team .slide .image{
+    position: relative;
+    overflow: hidden;
+}
+
+.team .slide .image img{
+    background-color: #f1eae9;
+    width: 100%;
+}
+
+.team .slide .image .share{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10rem;
+    padding: 5px;
+    background: rgba(0,0,0,0.8);
+}
+
+.team .slide .image .share a{
+    font-size:25px;
+    margin: 0 1rem;
+    color: #fff;
+}
+
+.team .slide .image .share a:hover{
+    color: #df9084;
+}
+/* .content{
+    display: table-column-group;
+    border: 2px solid blue;
+
+} */
+.swiper-slide{
+    display: inline;
+}
+.team .slide .content h6{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #444;
+}
+
+.team .slide .content span{
+    font-size: 18px;
+    line-height: 2;
+    color: #777;
+}
+
+.team-slider .swiper-button-next{
+    color: #444;
+}
+
+.team-slider .swiper-button-prev{
+    color: #444;
+}
+/* team section end */
+
+
+/* <!-- testmonial section start --> */
+
+/* <!-- testmonial section end --> */
