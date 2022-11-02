@@ -85,5 +85,41 @@ var swiper = new Swiper(".team-slider", {
 
 /* <!-- testmonial section start --> */
 
-
+var swiper = new Swiper(".testmonial-swiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
 /* <!-- testmonial section start --> */
+// bvhxvjb//
+var swiper = new Swiper(".myautoSwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+0: {
+    slidesPerView: 1,
+},
+768: {
+    slidesPerView: 2,
+},
+991: {
+    slidesPerView: 5,
+},
+},
+
+});
