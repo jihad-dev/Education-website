@@ -407,10 +407,8 @@ p {
 /* time section */
 
 
+
 /* team section start */
-
-
-
 img{
     user-select: none;
 }
@@ -479,14 +477,6 @@ img{
 .team .slide .image .share a:hover{
     color: #df9084;
 }
-/* .content{
-    display: table-column-group;
-    border: 2px solid blue;
-
-} */
-.swiper-slide{
-    display: inline;
-}
 .team .slide .content h6{
     font-size: 18px;
     text-transform: capitalize;
@@ -512,7 +502,7 @@ img{
 /* <!-- testmonial section start --> */
 
 .container_testmonial{
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -541,9 +531,9 @@ img{
     height: 100%;
     width: 100%;
   }
-  .profile-text{
-    display: flex;
-  }
+  /* .profile-text{
+    display: block;
+  } */
   .slide p {
     text-align: center;
     padding: 0 160px;
@@ -607,8 +597,17 @@ img{
   
 /* <!-- testmonial section end --> */
 
-/* touchSlider start */
 
+
+
+
+
+
+
+/* touchSlider start */
+.autoSwiperTouch{
+  margin-top: 20%;
+}
 
 .swiper-slide {
   /* Center slide text vertically */
