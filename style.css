@@ -496,18 +496,35 @@ img{
 .team-slider .swiper-button-prev{
     color: #444;
 }
+  /* swiper button css */
+  .nav-btn-team {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: black;
+    transition: 0.2s;
+  }
+  .nav-btn-team:hover {
+    background-color: #4070f4;
+  }
+  .nav-btn-team::after,
+  .nav-btn-team::before {
+    font-size: 20px;
+    color: #fff;
+  }
 /* team section end */
 
 
 /* <!-- testmonial section start --> */
 
 .container_testmonial{
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: #add;
   }
   .testimonial {
     position: relative;
@@ -606,9 +623,18 @@ img{
 
 /* touchSlider start */
 .autoSwiperTouch{
-  margin-top: 20%;
-}
+margin-top: 2px;
+width: 100%;
+height: 35vh;
 
+}
+/* .touch-img {
+  display: block;
+  width:190% auto;
+  height: 120vh;
+  border: 1px solid red;
+  object-fit: cover;
+} */
 .swiper-slide {
   /* Center slide text vertically */
   display: -webkit-box;
@@ -625,10 +651,17 @@ img{
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width:100%;
 
-  object-fit: contain;
-}
 /* touchSlider end */
+
+
+
+
+
+/* <!-- footer start --> */
+.footer-bg{
+  width: 100%;
+  background-color:#000;
+}
+
+/* <!-- footer end --> */

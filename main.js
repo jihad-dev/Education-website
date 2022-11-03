@@ -102,7 +102,7 @@ var swiper = new Swiper(".testmonial-swiper", {
 /* <!-- testmonial section start --> */
 // bvhxvjb//
 var swiper = new Swiper(".myautoSwiper", {
-  spaceBetween: 30,
+  spaceBetween: 0,
   centeredSlides: true,
   grabCursor: true,
   loop: true,
